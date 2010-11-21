@@ -6,21 +6,24 @@ Originally built to be used for the Cinder library, this animation lib has been 
 Simple Use:
 -----------
 
+**Create Ani Instance**
+
+    rp::Ani ani = new rp::Ani()
+
 **Setup animatable variable**
 
-    rp::Ani.mate(&var);
+    ani.mate(&var);
 
 **Store and animate variable**
 
     Vec2f vec_var(0,0);
-    rp::Animator<Vec2f>* move = Ani.mate(&vec_var);
+    rp::Animator<Vec2f>* move = ani.mate(&vec_var);
     move->go(44, Vec2f(10,10))
     
-    
-Goals:
+Goals / Notes:
 ------
 
-* Chaining
+* Chaining  
   `ex. Anim.animate().animate()`
     * Creating a queue for each animation
 * Incorporation of Lambda operations

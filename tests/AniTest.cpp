@@ -1,6 +1,6 @@
-#include "Ani.h"
-#include "Ease.h"
-#include "Timing.h"
+#include "../include/Ani.h"
+#include "../include/Ease.h"
+#include "../include/Timing.h"
 #include <map>
 
 using namespace std;

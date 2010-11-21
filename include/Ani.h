@@ -1,5 +1,5 @@
 //  ------------------------------------------------------------------------ // 
-//  ===== Animate.h ======================================================== // 
+//  ===== Ani.h ============================================================ // 
 //  ------------------------------------------------------------------------ // 
 //   Created:        Kevin Webster                                           // 
 //   Date:           10.10.20                                                // 
@@ -30,25 +30,6 @@
 //  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.             // 
 //  ------------------------------------------------------------------------ // 
 
-/*
-  Goals:
-  * Chaining
-    ex. Anim.animate().animate()
-      * Creating a queue for each animation
-  * Incorporation of Lambda operations
-    * similar to javascript
-  * Non Singleton
-  * 
-*/
-
-/*
-  Ani.mate(&var)->stop();
-  
-  Vec2f vec_var(0,0);
-  Animator<Vec2f>* move = Ani.mate(&vec_var);
-  move->go(44, Vec2f(10,10))
-*/
-
 #pragma once
 
 #include <deque>
@@ -61,7 +42,6 @@
 #include "Animator.h"
 #include "Animation.h"
 #include "Timing.h"
-#include "../core/EventMgr.h"
 
 
 namespace rp {

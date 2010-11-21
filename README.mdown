@@ -1,0 +1,28 @@
+Ani - Simple C++ animation manager
+==================================
+
+Originally built to be used for the Cinder library, this animation lib has been repurposed to work with any type that has its +/-/* operators implemented.
+
+Simple Use:
+-----------
+
+**Setup animatable variable**
+
+    rp::Ani.mate(&var);
+
+**Store and animate variable**
+
+    Vec2f vec_var(0,0);
+    rp::Animator<Vec2f>* move = Ani.mate(&vec_var);
+    move->go(44, Vec2f(10,10))
+    
+    
+Goals:
+------
+
+* Chaining
+  `ex. Anim.animate().animate()`
+    * Creating a queue for each animation
+* Incorporation of Lambda operations
+  * similar to javascript
+* Non Singleton

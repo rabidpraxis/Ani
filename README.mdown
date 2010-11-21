@@ -19,7 +19,9 @@ Simple Use:
     Vec2f vec_var(0,0);
     rp::Animator<Vec2f>* move = ani.mate(&vec_var);
     move->go(44, Vec2f(10,10))
-    
+
+Check the test file for more examples.    
+
 Goals / Notes:
 ------
 
